@@ -1,9 +1,9 @@
 
 function Presentation() {
   return (
-    <section className="presentation">
+    <section className="main_presentation">
         <div className="section_name">
-            <h1>JUAN ALEMIDA</h1>
+            <h1>JUAN ALMEIDA</h1>
         </div>
 
         <div className="section_about">

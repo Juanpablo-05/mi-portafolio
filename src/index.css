@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background: #f4f3ec;
 }
 
-
 /* HEADER */
-.main_header{
+.main_header {
   padding: 10px;
   background: transparent;
   width: 100%;
@@ -25,25 +24,25 @@ body{
   top: 0;
   left: 0;
   z-index: 10;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
-  &.scrolled{
+  &.scrolled {
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: all .3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
   }
 
-  .header_logo{
+  .header_logo {
     width: 20%;
     display: flex;
     align-items: center;
-    justify-content: space-around 
+    justify-content: space-around;
   }
 
-  .header_nav{
+  .header_nav {
     width: 40%;
-    
-    ul{
+
+    ul {
       width: 100%;
       height: 100%;
       display: flex;
@@ -52,30 +51,30 @@ body{
       padding: 0;
       margin: 0;
 
-      li{
+      li {
         cursor: pointer;
         position: relative;
-        a{
+        a {
           text-decoration: none;
           color: #000;
           font-weight: 600;
           font-size: 18px;
         }
 
-        .barra{
+        .barra {
           position: absolute;
           bottom: -4px;
           left: 0;
           width: 0;
           height: 2px;
           background: #000;
-          transition: all .3s ease-in-out;
+          transition: all 0.3s ease-in-out;
         }
 
-        &:hover{
-          .barra{
+        &:hover {
+          .barra {
             width: 100%;
-            transition: all .3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             background: #000;
             height: 2px;
             border-radius: 5px;
@@ -84,78 +83,189 @@ body{
       }
     }
   }
-} 
+}
 
 /* PRESENTACION */
-.presentation{
+.main_presentation {
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: #2424;
 
-.section_name{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 50px;
-
-  h1{
-    font-size: 10em;
-    font-weight: 600;
-    color: #000;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-}
-.section_about{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-
-  .section_lema{
-    width: 25%;
-    position: relative;
-  }
-
-  .section_image{
-    position: relative;
-    top: -10px;
-    
-    width: 35%;
-    height: 500px;
-  
-
-    img{
-      border-radius: 5%;
-      width: 100%;
-      height: 100%;
-      border-radius: 5%;
-      border: #ffffff solid 5px;
-      transform: rotate(10deg);
-      text-align: center;
-      margin-top: -80px;
-      transition: all .3s ease-in-out;
-
-      &:hover{
-        transform: rotate(0deg);
-        transition: all .3s ease-in-out;
-      }
-    }
-
-  }
-
-  .section_presentation_text{
-    width: 30%;
+  .section_name {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 50px;
+    margin-top: 6.5em;
 
+    h1 {
+      font-size: 10em;
+      font-weight: 600;
+      color: #000;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .section_lema {
+    p {
+      font-size: 2em;
+      font-weight: 400;
+      color: #000;
+      text-align: center;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  .section_about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .section_lema {
+      width: 25%;
+      position: relative;
+    }
+
+    .section_image {
+      position: relative;
+      top: -10px;
+
+      width: 35%;
+      height: 500px;
+
+      img {
+        border-radius: 5%;
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        border: #ffffff solid 5px;
+        transform: rotate(10deg);
+        text-align: center;
+        margin-top: -100px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: rotate(0deg);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+
+    .section_presentation_text {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .section_presentation_text {
+    padding: 10px;
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #000;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      font-weight: 400;
+      color: #000;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 10px;
+      background: #000;
+      border-radius: 5px;
+      border: #fff solid 0.5px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+        border: #ccc solid 0.5px;
+      }
+    }
   }
 }
+
+/* ABOUT */
+
+.main_about {
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+
+  .about_tecnologies {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 10px 20px 10px;
+
+    h3 {
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .about_caorousel {
+      overflow: hidden;
+      margin-top: 1.5em;
+      width: 100%;
+
+      .carousel_track {
+        display: flex;
+        gap: 3rem;
+        animation: scroll 25s linear infinite;
+        width: fit-content;
+      }
+
+      .carousel-logo {
+        height: 60px;
+        min-width: 130px; /* Evita saltos */
+        object-fit: contain;
+        opacity: 0.4;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
